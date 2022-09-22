@@ -1,0 +1,14 @@
+<div class="navbar-header">
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <% @articles.each do |article| %>
+        <%= link_to article.title, article_path(article) %>
+        <hr>
+      <% end %>
+    </div>
+  </div>
+</div>
